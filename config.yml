@@ -1,0 +1,51 @@
+ItemNameTag:
+  Item: "NAME_TAG"
+  Item-Data: 0 #If any like 1:6 6 would go here if it doesn't, set to 0
+  Name: "&3&lItem &b&lName&3&lTag &7(Right-Click)"
+  Lore:
+    - "&7Use this ItemNameTag to change"
+    - "&7the name of the item in your hand"
+
+#What should be said to cancel the naming?
+Cancel: "cancel"
+
+#Main Command
+Main:
+  help1: "&6____________.[&e&lItem&6&lName&e&lTag&6].____________"
+  help2: "&e/ItemNameTag <Player> <Amount>"
+   
+Messages:
+  Nothing-In-Hand: "&cWhy do you want rename air? &aPlease hold an item you wish to rename!"
+  No-Permission-Use: "&cYou do not have permission to use a &3&lItem &b&lName&3&lTag"
+  No-Permission-Command: "&cYou do not have permission to use that command!"
+  Invalid-Number: "&cPlease enter a valid number!"
+  Player-Offline: "&6%player% &cis currently offline!"
+
+  #This is sent if a player tries to use another item name tag while renaming an item.
+  Finish-Renaming-Before-Use: "&cYou must finish renaming your current item first!"
+  Renamed-Message: "&aYou renamed your &6%item% to %name%"
+
+
+  Activate-Message:
+    - " "
+    - " "
+    - "&b&l(!)&b Enter what you would like your item to be named."
+    - "&7(Make sure you're holding the item you would like to be renaming)"
+    - " "
+    - " "
+
+  Cancel-Message:
+    - " "
+    - " "
+    - "&c&l(!)&cYou canceled renaming your item!"
+    - "&7Your ItemNameTag was given back!"
+    - " "
+    - " "
+
+  Receive: "&aYou received &7(&6%amount%&7) &aItemNameTags from &b%sender%"
+  Sender: "&aYou gave &6%target%  &7(&6%amount%&7) &aItemNameTags"
+  
+Blocked-Items: 
+  - "CHEST"
+  - "ENDER_CHEST"
+  - "STICK"
